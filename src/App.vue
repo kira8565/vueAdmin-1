@@ -1,9 +1,9 @@
 <template>
-	<div id="app">
-		<transition name="bounce">
-			<router-view></router-view>
-		</transition>
-	</div>
+    <div id="app">
+        <transition name="bounce">
+            <router-view></router-view>
+        </transition>
+    </div>
 </template>
 
 <script>
@@ -13,9 +13,12 @@ export default {
   components: {
   },
   created:function(){
+      //登录后默认跳转到login
 	  this.$router.replace('/login')
   }
 }
+
+
 </script>
 
 <style>
@@ -81,4 +84,6 @@ export default {
 		vertical-align: baseline;
 		margin-right: 10px;
 	}
+
+
 </style>
